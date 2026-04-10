@@ -1,5 +1,6 @@
-#include iostream
+#include <iostream>
+
 using namespace std;
+
 int main (){
-cout<<"helo word";
-return 0;}
+cout<<"helo word"<<endl;}
