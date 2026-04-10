@@ -2,5 +2,5 @@
 
 using namespace std;
 
-int main (){
-cout<<"helo word"<<endl;}
+int main ()
+{cout<<"helo word"<<endl;}
