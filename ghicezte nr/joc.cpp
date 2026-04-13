@@ -5,7 +5,7 @@ using namespace std;
 
 int main() 
 {
-    int n,k=10;
+    int n,k=0;
     random_device rd;
     mt19937 gen(rd());
     uniform_int_distribution<> dist (1,100);
@@ -13,15 +13,15 @@ int main()
  do{
     cout << "Introduce un numero: ";
     cin>>n;
-    k--;
     if(n>num) {
-        cout<<"too big"<<endl;
+        cout<<"too big"<<endl; k++;
     } else if(n<num) {
-        cout<<"too small"<<endl;
+        cout<<"too small"<<endl;k++;
     } else {
-        cout<<"you guessed in "<<k<<" chances"<<endl;
+        cout<<"you guessed "<<k<<" chances"<<endl;
         break;
     }
         
  }while (n!=num && k>0);
+ 
  }
