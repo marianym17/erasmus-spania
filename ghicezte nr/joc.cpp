@@ -18,10 +18,12 @@ int main()
     } else if(n<num) {
         cout<<"too small"<<endl;k++;
     } else {
-        cout<<"you guessed "<<k<<" chances"<<endl;
+        cout<<"you guessed in "<<k<<" chances"<<endl;
         break;
     }
+    if(k==10) 
+   { cout<<"you lost";}
         
  }while (n!=num && k>0);
- 
+
  }
